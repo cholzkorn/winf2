@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.css">
+  </head>
+  <body>
+    <h2 class="col-md-12">Erhebung zur Job-Zufriedenheit </h2>
+    <hr>
+
+    <!-- Hier wird die PHP-Datei unter action angegeben.
+    Die Methode heisst POST, da das Formular bei einem Submit
+    an die PHP-Datei postet. -->
+    <form action="connect.php" method="POST" class="col-md-12">
+
+      <p>Vorname: <br>
+        <input type="text" name="vorname">
+        <br></p>
+
+      </p>Nachname: <br>
+        <input type="text" name="nachname">
+        <br></p>
+
+      <p>Beruf: <br>
+        <input type="text" name="beruf">
+        <br></p>
+
+      <p>J&auml;hrliches Gehalt: <br>
+        <input type="number" name="gehalt" min="0" step="1000">
+        <br></p>
+
+      <p>Zufriedenheit (1-10): <br>
+        <input type="number" name="zufriedenheit" min="0" max="10">
+        <br></p>
+
+        <input type="submit" name="submit" value="&Uuml;bermitteln">
+    </form>
+  </body>
+</html>
